@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <link href="./CSS/cart_1.css" rel="stylesheet">
+  <title>選擇優惠/配送付款方式</title>
+</head>
+<body>
+  
+  <header>
+    <div class="menu_header">
+      
+      <div class="logo">
+        <a href="./index.html"><img src="./images/LOGO.png"></a>
+      </div>
+      <ul>
+        <li><a href="./aboutus.html">關於我們</a></li>
+        <li><a href="./news.html">最新消息</a></li>
+        <li><a href="./shower.html">沐浴系列</a></li>
+        <li><a href="./body.html">身體保養</a></li>
+        <li><a href="./nioi.html">香氛</a></li>
+        <li><a href="./Best-selling.html">暢銷排行</a></li>
+        <li><a href="./shop.html">櫃點查詢</a></li>
+      </ul>
+      
+      <div class="user_list">
+        <a href="./sign-in.html"><img src="./images/user.png"></a>
+        <div class="cart_hover">
+          <a href="./cart.html"><img src="./images/shopping_cart.png"></a>
+          <div class="cart_list">
+            <table class="list_item">
+              <tr>
+                <td><img src="./images/mosa1.jpg" id="buy_list"></td>
+                <td>
+                  <p class="list_item_name">經典身體磨砂膏</p>
+                </td>
+                <td>
+                  <p class="list_item_count">1</p>
+                </td>
+                <td><img src="./images/garbage.png"></td>
+              </tr>
+              <tr>
+                <td><img src="./images/mosa2.jpg" id="buy_list"></td>
+                <td>
+                  <p class="list_item_name">經典身體磨砂膏</p>
+                </td>
+                <td>
+                  <p class="list_item_count">1</p>
+                </td>
+                <td><img src="./images/garbage.png"></td>
+              </tr>
+            </table>
+            <div><a href="./cart.html" class="go_buy">前往結帳</a></div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="circle_border">
+      <div class="circle2">
+        <p>Step</p>
+        <br>
+        <p>01</p>
+        <div class="text">購物車清單</div>
+      </div>
+      <div class="triangle"></div>
+      <div class="circle1">
+        <p>Step</p>
+        <br>
+        <p>02</p>
+        <div class="text1">選擇優惠／配送付款方式</div>
+      </div>
+      <div class="triangle"></div>
+      <div class="circle2">
+        <p>Step</p>
+        <br>
+        <p>03</p>
+        <div class="text">完成訂購</div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <div class="title">
+        <p>商品名稱</p>
+        <p>價格</p>
+        <p>數量</p>
+        <p>金額</p>
+        <p>刪除</p>
+      </div>
+
+      <div class="item">
+        <p>經典身體磨砂膏</p>
+        <p>2,080</p>
+        <p>2</p>
+        <p>4,160</p>
+        <div class="img"><img src="./images/garbage.png"></div>
+      </div>
+
+
+      <div class="no"></div>
+
+      <div class="total">
+        <p>訂購總金額</p>
+        <p>$4,160</p>
+      </div>
+    </div>
+
+      <div class="payment_border">
+        <div class="payment">
+          <div class="payment_title">
+            <h3>選擇付款方式</h3>
+          </div>
+          <label>
+            <input type="radio" name="payment" checked>
+            線上付款-信用卡（可使用VISA、MASTERCARD、JCB）
+          </label>
+          <label>
+            <input type="radio" name="payment">
+            貨到付款
+          </label>
+          <label>
+            <input type="radio" name="payment">
+            LINE Pay
+          </label>
+        </div>
+
+        <div class="transport">
+          <div class="transport_title">
+            <h3>選擇配送方式</h3>
+          </div>
+          <label>
+            <input type="radio" name="transport" checked>
+            便利商店取貨
+          </label>
+          <label>
+            <input type="radio" name="transport">
+            宅急便
+          </label>
+        </div>
+
+        <div class="recipient">
+          <div class="recipient_title">
+            <h3>收件人資料</h3>
+          </div>
+
+          <div class="recipient_contact">
+            <p>*姓名</p>
+            <input type="text" name="name">
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>*手機號碼</p>
+            <input type="text" name="tel">
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>*收件地址</p>
+            <input type="text" name="address">
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>捐贈發票</p>
+            <label>
+              <input type="radio" name="donate_invoice">
+              是
+            </label>
+            <label>
+              <input type="radio" name="donate_invoice" checked>
+              否
+            </label>
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>電子發票載具</p>
+            <label>
+              <input type="radio" name="invoice_type" checked>
+              二聯式雲端發票
+            </label>
+            <label>
+              <input type="radio" name="invoice_type">
+              手機載具
+            </label>
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>需要統一編號</p>
+            <label>
+              <input type="radio" name="uniform_numbers" checked>
+              是
+            </label>
+            <label>
+              <input type="radio" name="uniform_numbers">
+              否
+            </label>
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>*統一編號</p>
+            <input type="text" name="uniform_numbers">
+          </div>
+          <br>
+
+          <div class="recipient_contact">
+            <p>*公司抬頭</p>
+            <input type="text" name="uniform_name">
+          </div>
+        </div>
+      </div>
+
+      <div class="next_step">
+        <a href="./cart.html">上一步</a>
+        <a href="./cart_2.html">確定送出</a>
+      </div>
+
+
+
+
+  </main>
+
+  <footer>
+    <div class="footer_border">
+      <ul class="footer_list">
+        <li>
+          <p>關於品牌</p>
+          <ul>
+            <li><a href="./aboutus.html">品牌故事</a></li>
+            <li><a href="./gift.html">贈禮精神</a></li>
+            <li><a href="./shop.html">櫃點查詢</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>顧客服務</p>
+          <ul>
+            <li><a href="./QA.html">常見問題</a></li>
+            <li><a href="./return.html">退換貨政策</a></li>
+            <li><a href="./contact.html">聯絡我們</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="follow_us">
+        <p>FOLLOW US</p>
+        <ul>
+          <li><a href="https://twitter.com/?lang=zh-tw"><img src="./images/twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="./images/instagram.png"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="./images/facebook.png"></a></li>
+        </ul>
+        <p class="hashtag">#WonderlandTaiwan</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <link href="./CSS/cart.css" rel="stylesheet">
+  <title>購物車清單</title>
+</head>
+<body>
+  
+  <header>
+    <div class="menu_header">
+      
+      <div class="logo">
+        <a href="./index.html"><img src="./images/LOGO.png"></a>
+      </div>
+      <ul>
+        <li><a href="./aboutus.html">關於我們</a></li>
+        <li><a href="./news.html">最新消息</a></li>
+        <li><a href="./shower.html">沐浴系列</a></li>
+        <li><a href="./body.html">身體保養</a></li>
+        <li><a href="./nioi.html">香氛</a></li>
+        <li><a href="./Best-selling.html">暢銷排行</a></li>
+        <li><a href="./shop.html">櫃點查詢</a></li>
+      </ul>
+      
+      <div class="user_list">
+        <a href="./sign-in.html"><img src="./images/user.png"></a>
+        <div class="cart_hover">
+          <a href="./cart.html"><img src="./images/shopping_cart.png"></a>
+          <div class="cart_list">
+            <table class="list_item">
+              <tr>
+                <td><img src="./images/mosa1.jpg" id="buy_list"></td>
+                <td>
+                  <p class="list_item_name">經典身體磨砂膏</p>
+                </td>
+                <td>
+                  <p class="list_item_count">1</p>
+                </td>
+                <td><img src="./images/garbage.png"></td>
+              </tr>
+              <tr>
+                <td><img src="./images/mosa2.jpg" id="buy_list"></td>
+                <td>
+                  <p class="list_item_name">經典身體磨砂膏</p>
+                </td>
+                <td>
+                  <p class="list_item_count">1</p>
+                </td>
+                <td><img src="./images/garbage.png"></td>
+              </tr>
+            </table>
+            <div><a href="./cart.html" class="go_buy">前往結帳</a></div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="circle_border">
+      <div class="circle1">
+        <p>Step</p>
+        <br>
+        <p>01</p>
+        <div class="text">購物車清單</div>
+      </div>
+      <div class="triangle"></div>
+      <div class="circle2">
+        <p>Step</p>
+        <br>
+        <p>02</p>
+        <div class="text1">選擇優惠／配送付款方式</div>
+      </div>
+      <div class="triangle"></div>
+      <div class="circle2">
+        <p>Step</p>
+        <br>
+        <p>03</p>
+        <div class="text">完成訂購</div>
+      </div>
+    </div>
+
+
+      <div class="cart">
+        <div class="title">
+          <p>商品名稱</p>
+          <p>價格</p>
+          <p>數量</p>
+          <p>金額</p>
+          <p>刪除</p>
+        </div>
+
+        <div class="item">
+          <p>經典身體磨砂膏</p>
+          <p id="price">2,080</p>
+          <div class="select">
+            <div class="quantity"><img src="images/minus-sign.png" id="minus"></div>
+            <input type="text" value="1" id="abc">
+            <div class="quantity1"><img src="./images/add.png" id="plus"></div>
+          </div>
+          <p>2,080</p>
+          <div class="img"><img src="./images/garbage.png"></div>
+        </div>
+
+
+        <div class="no"></div>
+
+        <div class="total">
+          <p>訂購總金額</p>
+          <p>$<span id="total"></span></p>
+        </div>
+
+      </div>
+
+      <div class="next_step">
+        <a href="./cart_1.html">下一步-選擇付款方式</a>
+      </div>
+      
+
+  </main>
+
+  <footer>
+    <div class="footer_border">
+      <ul class="footer_list">
+        <li>
+          <p>關於品牌</p>
+          <ul>
+            <li><a href="./aboutus.html">品牌故事</a></li>
+            <li><a href="./gift.html">贈禮精神</a></li>
+            <li><a href="./shop.html">櫃點查詢</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>顧客服務</p>
+          <ul>
+            <li><a href="./QA.html">常見問題</a></li>
+            <li><a href="./return.html">退換貨政策</a></li>
+            <li><a href="./contact.html">聯絡我們</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="follow_us">
+        <p>FOLLOW US</p>
+        <ul>
+          <li><a href="https://twitter.com/?lang=zh-tw"><img src="./images/twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="./images/instagram.png"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="./images/facebook.png"></a></li>
+        </ul>
+        <p class="hashtag">#WonderlandTaiwan</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    var add = document.getElementById("plus");
+    var minus = document.getElementById("minus");
+    var abc = document.getElementById("abc");
+
+    add.addEventListener("click", function(){
+      abc.value++;
+    });
+
+    minus.addEventListener("click", function(){
+      if(abc.value <= 1){
+        abc.value = 1;
+      }else{
+        abc.value--;
+      }
+    });
+
+    var price = document.getElementById("price");
+    var total = document.getElementById("total");
+    function total(){
+      abc.value*price;
+    }
+  </script>
+
+</body>
+</html>

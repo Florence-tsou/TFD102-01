@@ -1,0 +1,128 @@
+@import "./header.css";
+@import "./footer.css";
+
+
+*{
+  box-sizing: border-box;
+  background-color: #F0EAE2;
+  margin: 0;
+  font-family: "微軟正黑體";
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.circle_border{
+  /* border: 1px solid red; */
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.circle1{
+  border: 1px solid #3d3027;
+  background-color: #3d3027;
+  border-radius: 50px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+div.circle1 > p{
+  display: inline-block;
+  background-color: #3d3027;
+  color: white;
+  font-size: 13px;
+}
+
+div.circle1 > p:first-child{
+  margin-top: 10px;
+}
+
+div.circle1 > p:nth-child(3){
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.text{
+  border: 1px solid #3d3027;
+  background-color: white;
+  color: #3d3027;
+  margin-top: 5px;
+  width: 120px;
+  text-align: center;
+  transform: translateX(-10%);
+}
+
+div.circle2{
+  border: 1px solid #3d3027;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+div.circle2 > p{
+  display: inline-block;
+  background-color: white;
+  color: #3d3027;
+  font-size: 13px;
+}
+
+div.circle2 > p:first-child{
+  margin-top: 10px;
+}
+
+div.circle2 > p:nth-child(3){
+  font-size: 20px;
+  font-weight: 700;
+}
+  
+div.text1{
+  border: 1px solid #3d3027;
+  background-color: white;
+  color: #3d3027;
+  margin-top: 5px;
+  width: 200px;
+  text-align: center;
+  transform: translateX(-25%);
+}
+
+div.triangle{
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom:15px solid transparent;
+  border-left: 20px solid #3d3027;
+}
+
+div.order_finish{
+  /* border: 1px solid red; */
+  margin-top: 80px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+div.finish_word{
+  /* border: 1px solid blue; */
+  color: #3d3027;
+}
+
+div.finish_word p:first-child{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+div.finish_word p:last-child{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 5px;
+}

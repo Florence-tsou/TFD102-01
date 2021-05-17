@@ -1,0 +1,86 @@
+@import "./header.css";
+@import "./footer.css";
+
+
+*{
+  box-sizing: border-box;
+  background-color: #F0EAE2;
+  margin: 0;
+  font-family: "微軟正黑體";
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.banner, div.banner img{
+  max-width: 100%;
+  min-width: 1200px;
+  font-size: 0;
+}
+
+div.title{
+  /* border: 1px solid green; */
+  display: inline-flex;
+  margin: 30px 0 0 30px;
+  font-size: 20px;
+  color: #3D3027;
+}
+
+div.best_border{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+div.best_list{
+  /* border: 1px solid blue; */
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
+  /* border: 1px solid green; */
+  width: 400px;
+  color: #3D3027;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+div.best_list h2{
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+div.best_word1 p:nth-child(6), div.best_word2 p:nth-child(6), div.best_word3 p:nth-child(6), div.best_word4 p:nth-child(6), div.best_word5 p:nth-child(6){
+  margin-top: 20px;
+}
+
+div.best_word1 a, div.best_word2 a, div.best_word3 a, div.best_word4 a, div.best_word5 a{
+  color: #3D3027;
+}
+
+div.best_word1 a:hover, div.best_word2 a:hover, div.best_word3 a:hover, div.best_word4 a:hover, div.best_word5 a:hover{
+  color: #b2966b;
+}
+
+
+
+div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
+  /* border: 1px solid purple; */
+  width: 400px;
+  font-size: 0;
+}
+
+div.best_list img{
+  width: 100%;
+}
+

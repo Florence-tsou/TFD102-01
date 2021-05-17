@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <link href="./CSS/item.css" rel="stylesheet">
+  <title>經典磨砂膏</title>
+</head>
+<body>
+  
+  <header>
+    <div class="menu_header">
+      
+      <div class="logo">
+        <a href="./index.html"><img src="./images/LOGO.png"></a>
+      </div>
+      <ul>
+        <li><a href="./aboutus.html">關於我們</a></li>
+        <li><a href="./news.html">最新消息</a></li>
+        <li><a href="./shower.html">沐浴系列</a></li>
+        <li><a href="./body.html">身體保養</a></li>
+        <li><a href="./nioi.html">香氛</a></li>
+        <li><a href="./Best-selling.html">暢銷排行</a></li>
+        <li><a href="./shop.html">櫃點查詢</a></li>
+      </ul>
+      
+      <div class="user_list">
+        <a href="./sign-in.html"><img src="./images/user.png"></a>
+        <div class="cart_hover">
+          <a href="./cart.html"><img src="./images/shopping_cart.png"></a>
+          <div class="cart_list">
+            <table class="list_item">
+              <tr>
+                <td><img src="./images/mosa1.jpg" id="buy_list"></td>
+                <td>
+                  <p class="list_item_name">經典身體磨砂膏</p>
+                </td>
+                <td>
+                  <p class="list_item_count">1</p>
+                </td>
+                <td><img src="./images/garbage.png"></td>
+              </tr>
+              <tr>
+                <td><img src="./images/mosa2.jpg" id="buy_list"></td>
+                <td>
+                  <p class="list_item_name">經典身體磨砂膏</p>
+                </td>
+                <td>
+                  <p class="list_item_count">1</p>
+                </td>
+                <td><img src="./images/garbage.png"></td>
+              </tr>
+            </table>
+            <div><a href="./cart.html" class="go_buy">前往結帳</a></div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="title">
+      <p><a href="./shower.html">沐浴系列</a> > <a href="./shower.html">身體磨砂膏</a> > 經典身體磨砂膏</p>
+    </div>
+
+    <div class="item">
+      <div class="item_pic">
+        <img src="images/mosa1.jpg">
+      </div>
+      <div class="item_caption">
+        <h3>經典身體磨砂膏</h3>
+        <h4>NT$2,080</h4>
+        <br>
+        <span>以色列死海礦鹽細緻顆粒能溫和有效去除老廢角質，豐富微量礦物元素加強肌膚的修護功能。橄欖油與荷荷芭油保濕滋潤，小麥胚芽油軟化角質，修護肌膚，加強肌膚防禦力。添加特別研製的經典複方香氛精油，使用後肌膚立感柔嫩，肌理細緻，散發光采，健康有彈性。</span>
+        <br>
+        <div class="quantity"><img src="images/minus-sign.png" id="minus"></div>
+        <input type="text" value="1" id="abc">
+        <div class="quantity1"><img src="./images/add.png" id="plus"></div>
+        <button type="button">加入購物車</button>
+      </div>
+    </div>
+
+    <div class="caption_out">
+      <div class="caption_border">
+        <ul class="caption_list">
+          <li><a href="#">香氛</a></li>
+          <li><a href="#">使用方法</a></li>
+        </ul>
+        <div class="text">
+          <p>揉合廣藿香、薰衣草、香蘭三種氣息，以獨特廣藿香喚醒感官，紫色薰衣草淡雅花香鎮靜放鬆心情，香蘭調和平衡，提振精神。</p>
+          <br>
+          <p>前調：薰衣草</p>
+          <p>中調：琥珀、廣藿香、薰衣草花</p>
+          <p>基調：香草、岩玫瑰樹脂</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer_border">
+      <ul class="footer_list">
+        <li>
+          <p>關於品牌</p>
+          <ul>
+            <li><a href="./aboutus.html">品牌故事</a></li>
+            <li><a href="./gift.html">贈禮精神</a></li>
+            <li><a href="./shop.html">櫃點查詢</a></li>
+          </ul>
+        </li>
+        <li>
+          <p>顧客服務</p>
+          <ul>
+            <li><a href="./QA.html">常見問題</a></li>
+            <li><a href="./return.html">退換貨政策</a></li>
+            <li><a href="./contact.html">聯絡我們</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="follow_us">
+        <p>FOLLOW US</p>
+        <ul>
+          <li><a href="https://twitter.com/?lang=zh-tw"><img src="./images/twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="./images/instagram.png"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="./images/facebook.png"></a></li>
+        </ul>
+        <p class="hashtag">#WonderlandTaiwan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var add = document.getElementById("plus");
+    var minus = document.getElementById("minus");
+    var abc = document.getElementById("abc");
+
+    add.addEventListener("click", function(){
+      abc.value++;
+    });
+
+    minus.addEventListener("click", function(){
+      if(abc.value <= 1){
+        abc.value = 1;
+      }else{
+        abc.value--;
+      }
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+@import "./header.css";
+@import "./footer.css";
+
+*{
+  box-sizing: border-box;
+  background-color: #F0EAE2;
+  margin: 0;
+  font-family: "微軟正黑體";
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.index_banner, div.index_banner img{
+  max-width: 100%;
+  min-width: 1200px;
+  font-size: 0;
+}
+
+div.circle{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+div.circle div{
+  border: 1px solid #3D3027;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+div.circle div:first-child{
+  background-color: #3D3027;
+}
+
+
+
+div.aboutus{
+  /* border: 1px solid purple; */
+  display: flex;
+  margin-bottom: 200px;
+}
+
+div.aboutus_pic{
+  /* border: 1px solid red; */
+  width: 500px;
+  font-size: 0;
+  margin-left: 150px;
+  position: relative;
+  display: flex;
+}
+
+div.aboutus_pic img{
+  width: 100%;
+  z-index: 1;
+}
+
+div.aboutus_talk{
+  background-color: #3D3027;
+  height: 300px;
+  width: 700px;
+  padding-left: 350px;
+  padding-right: 20px;
+  position: absolute;
+  left: 200px;
+  bottom: -50px;
+}
+
+div.aboutus_talk h3{
+  /* border: 1px solid red; */
+  font-size: 1rem;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #3D3027;
+  color: white;
+}
+
+div.aboutus_talk p{
+  background-color: #3D3027;
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+
+div.pushitem{
+  /* border: 1px solid red; */
+  margin-bottom: 400px;
+}
+
+div.pushitem_last_border{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+ul.pushitem_last{
+  background-color: #3D3027;
+  display: inline-flex;
+  list-style: none;
+  width: 600px;
+  height: 40px;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul.pushitem_last li:first-child{
+  border-bottom: 2px solid white;
+  /* padding: 0px 10px 0 10px; */
+  font-weight: 700;
+  background-color: #3D3027;
+}
+
+ul.pushitem_last a{
+  text-decoration: none;
+  background-color: #3D3027;
+  color: white;
+  padding: 0px 10px 0 10px;
+}
+
+ul.pushitem_last a:hover{
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding: 0px 10px 0 10px;
+}
+
+ul.pushitem_pic{
+  /* border: 1px solid blue; */
+  padding: 20px 80px 20px 80px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul.pushitem_pic li{
+  /* border: 1px solid black; */
+  width: 180px;
+}
+
+ul.pushitem_pic a > img{
+  width: 100%;
+}
+
+ul.pushitem_pic li > a{
+  text-decoration: none;
+  text-align: center;
+  color: #3D3027;
+}
+
+ul.pushitem_pic li > a:hover{
+  color: #b2966b;
+}
+
+
+
+
+div.ceremony{
+  /* border: 1px solid purple; */
+  display: flex;
+  margin-bottom: 150px;
+}
+
+div.ceremony_pic{
+  /* border: 1px solid red; */
+  width: 500px;
+  font-size: 0;
+  position: absolute;
+  bottom: 50px;
+  right: -200px;
+}
+
+div.ceremony_pic img{
+  width: 100%;
+}
+
+div.ceremony_talk{
+  border: 1px solid blue;
+  background-color: #3D3027;
+  width: 700px;
+  height: 300px;
+  padding-right: 350px;
+  padding-left: 20px;
+  position: relative;
+  margin-left: 150px;
+}
+
+
+div.ceremony_talk h3{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #3D3027;
+  color: white;
+}
+
+div.ceremony_talk p{
+  background-color: #3D3027;
+  color: white;
+}
+
+
+
+
+
+div.ceremony_border{
+  /* border: 1px solid red; */
+  font-size: 0;
+  margin-bottom: 150px;
+}
+
+div.ceremony_step{
+  /* border: 1px solid blue; */
+  width: 700px;
+  margin: 0 auto;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
+  /* border: 1px solid purple; */
+  width: 300px;
+  font-size: 1rem;
+  color: #3D3027;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+div.ceremony_step1 a, div.ceremony_step2 a, div.ceremony_step3 a{
+  color: #3D3027;
+}
+
+div.ceremony_step1 p:nth-child(5), div.ceremony_step2 p:nth-child(5), div.ceremony_step3 p:nth-child(5){
+  margin-top: 20px;
+}
+
+div.ceremony_step1 a:hover, div.ceremony_step2 a:hover, div.ceremony_step3 a:hover{
+  color: #b2966b;
+}
+
+div.ceremony_step1_pic, div.ceremony_step2_pic, div.ceremony_step3_pic{
+  /* border: 1px solid green; */
+  width: 300px;
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+div.ceremony_step1_pic > img, div.ceremony_step2_pic > img, div.ceremony_step3_pic > img{
+  width: 100%;
+}
+
+div.ceremony_step1, div.ceremony_step2_pic, div.ceremony_step3{
+  margin-right: 30px;
+}
+
+div.ceremony_step1 h2, div.ceremony_step2 h2, div.ceremony_step3 h2{
+  font-size: 50px;
+}
+
+div.ceremony_step1 span, div.ceremony_step2 span, div.ceremony_step3 span{
+  font-size: 21px;
+  display: block;
+  margin-bottom: 20px;
+  color: #b2966b;
+}
+
+
+
+div.insta{
+  /* border: 1px solid black; */
+  font-size: 0;
+}
+
+div.insta_word{
+  /* border: 1px solid blue; */
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  color: #3D3027;
+  font-weight: 700;
+}
+
+div.insta_pic_pose{
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 50px 200px 130px 200px;
+  display: grid;
+  gap: 10px 10px;
+
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: auto;
+  grid: "pic1 pic1 pic2 pic3" "pic1 pic1 pic4 pic5" 
+  "pic7 pic8 pic6 pic6" "pic9 pic10 pic6 pic6"
+}
+
+div.insta_pic_pose img{
+  /* border: 1px solid green; */
+  width: 100%;
+}
+
+a.insta_pic_1{
+  grid-area: pic1;
+}
+
+a.insta_pic_2{
+  grid-area: pic2;
+}
+
+a.insta_pic_3{
+  grid-area: pic3;
+}
+
+a.insta_pic_4{
+  grid-area: pic4;
+}
+
+a.insta_pic_5{
+  grid-area: pic5;
+}
+
+a.insta_pic_6{
+  grid-area: pic6;
+}
+
+a.insta_pic_7{
+  grid-area: pic7;
+}
+
+a.insta_pic_8{
+  grid-area: pic8;
+}
+
+a.insta_pic_9{
+  grid-area: pic9;
+}
+
+a.insta_pic_10{
+  grid-area: pic10;
+}

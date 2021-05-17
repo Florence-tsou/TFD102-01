@@ -1,0 +1,151 @@
+@import "./header.css";
+@import "./footer.css";
+
+
+*{
+  box-sizing: border-box;
+  background-color: #F0EAE2;
+  margin: 0;
+  font-family: "微軟正黑體";
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.title{
+  /* border: 1px solid red; */
+  margin: 0 0 30px 20px;
+  color: #3D3027;
+  display: flex;
+  font-weight: 700;
+}
+
+div.title a{
+  color: #3D3027;
+}
+
+
+
+
+div.item{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+div.item_pic{
+  /* border: 1px solid blue; */
+  width: 300px;
+  margin-right: 20px;
+}
+
+div.item_pic img{
+  width: 100%;
+}
+
+div.item_caption{
+  /* border: 1px solid green; */
+  width: 400px;
+  padding-top: 50px;
+}
+
+div.item_caption span{
+  font-size: 14px;
+}
+
+div.quantity{
+  /* border: 1px solid blue; */
+  width: 10px;
+  display: inline-flex;
+  margin-right: 2px;
+}
+
+div.quantity1{
+  /* border: 1px solid blue; */
+  width: 10px;
+  display: inline-flex;
+  margin-right: 15px;
+}
+
+div.quantity img, div.quantity1 img{
+  width: 100%;
+}
+
+div.item_caption input{
+  border: 1px solid #3D3027;
+  color: #3D3027;
+  width: 30px;
+  text-align: center;
+}
+
+div.item_caption button{
+  border: 1px solid #3D3027;
+  background-color: #3D3027;
+  color: white;
+  margin-top: 20px;
+  padding: 3px 10px;
+}
+
+div.item_caption button:hover{
+  cursor: pointer;
+}
+
+
+
+div.caption_out{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center ;
+  margin-bottom: 100px;
+}
+
+div.caption_border{
+  border: 1.4px solid #3D3027;
+  width: 800px;
+  font-size: 0;
+}
+
+ul.caption_list{
+  border: 1px solid #3D3027;
+  background-color: #3D3027;
+  list-style: none;
+  padding: 10px 50px;
+  display: flex;
+  font-size: 1rem;
+}
+
+ul.caption_list > li:first-child{
+  margin-right: 50px;
+  font-weight: 700;
+}
+
+ul.caption_list li:first-child a{
+  border-bottom: 2px solid white;
+}
+
+ul.caption_list a{
+  /* border: 1px solid white; */
+  text-decoration: none;
+  background-color: #3D3027;
+  color: white;
+  padding: 0 10px;
+}
+
+ul.caption_list a:hover{
+  border-bottom: 2px solid white;
+  font-weight: 700;
+}
+
+div.text{
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+div.text p{
+  background-color: white;
+}
