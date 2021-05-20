@@ -63,7 +63,7 @@ div.aboutus_pic img{
 }
 
 div.aboutus_talk{
-  background-color: #3D3027;
+  background-color: #423730;
   height: 300px;
   width: 700px;
   padding-left: 350px;
@@ -237,16 +237,12 @@ div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
   margin-bottom: 50px;
 }
 
-div.ceremony_step1 a, div.ceremony_step2 a, div.ceremony_step3 a{
-  color: #3D3027;
-}
-
-div.ceremony_step1 p:nth-child(5), div.ceremony_step2 p:nth-child(5), div.ceremony_step3 p:nth-child(5){
+div.step a{
+  background-color: #3D3027;
   margin-top: 20px;
-}
-
-div.ceremony_step1 a:hover, div.ceremony_step2 a:hover, div.ceremony_step3 a:hover{
-  color: #b2966b;
+  padding: 3px 10px;
+  color: white;
+  text-decoration: none;
 }
 
 div.ceremony_step1_pic, div.ceremony_step2_pic, div.ceremony_step3_pic{

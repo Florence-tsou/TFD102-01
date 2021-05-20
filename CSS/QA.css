@@ -17,7 +17,7 @@ main{
 
 div.title{
   /* border: 1px solid red; */
-  margin: 30px 0 50px 30px;
+  margin: 30px 0 50px 200px;
   color: #3D3027;
   font-size: 20px;
   display: inline-flex;
@@ -39,7 +39,7 @@ ul.QA_list{
   padding: 0;
 }
 
-li.no{
+li.Q{
   border-bottom: 1px solid #3D3027;
   display: flex;
   padding: 10px;
@@ -50,11 +50,12 @@ div.add{
   margin-left: auto;
 }
 
-li.open{
+li.A{
   border-bottom: 1px solid #3D3027;
   padding: 30px;
+  /* display: none; */
 }
 
-li.open p{
+li.A > p{
   padding-bottom: 5px;
 }

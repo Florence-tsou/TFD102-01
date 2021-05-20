@@ -72,36 +72,34 @@
     <div class="news_border">
       <ul class="news_list">
         <li>
-          <a href="#">
-            <pre>2021/03/28       全新復活草純淨保濕系列，母親節檔期優惠</pre>
-          </a>
+            <pre id="open">2021/03/28       全新復活草純淨保濕系列，母親節檔期優惠</pre>
         </li>
         <li>
-          <a href="#">
             <pre>2021/03/27       全新復活草純淨保濕系列，母親節檔期優惠</pre>
-          </a>
         </li>
         <li>
-          <a href="#">
             <pre>2021/03/21       全新復活草純淨保濕系列，母親節檔期優惠</pre>
-          </a>
         </li>
         <li>
-          <a href="#">
             <pre>2020/12/25       全新復活草純淨保濕系列，母親節檔期優惠</pre>
-          </a>
         </li>
         <li>
-          <a href="#">
             <pre>2020/11/03       全新復活草純淨保濕系列，母親節檔期優惠</pre>
-          </a>
         </li>
         <li>
-          <a href="#">
             <pre>2020/09/12       全新復活草純淨保濕系列，母親節檔期優惠</pre>
-          </a>
         </li>
       </ul>
+
+      <div class="news_item" id="open1">
+        <p>2021/03/28</p>
+        <div class="close"><img src="./images/cancel.png" id="close"></div>
+        <p>全新復活草純淨保濕系列，母親節檔期優惠</p>
+        <p>聊表心意、真心的驚喜祝福或犒賞、寵溺心中所愛，Wonderland的禮品絕對是最適合送給媽媽的奢華送禮指標。</p>
+        <p>從最微細的心意到永誌難忘的驚喜。極具代表性的乳白色禮盒，絕對令人印象深刻。解開緞帶，掀開盒蓋，質感清脆的黑色拷貝紙散發著青檸、羅勒與柑橘香氛。</p>
+        <p>喜出望外香氣，令人垂涎的工藝蠟燭，細膩滋潤沐浴系列到幼滑豐潤身體護理。寵她、寵他、以至寵家。送贈與獲贈同樣興奮感動。</p>
+        <div class="item_img"><img src="./images/index_banner.jpg"></div>
+      </div>
 
       <div class="news_pic">
         <img src="./images/insta4.jpg">
@@ -141,6 +139,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+
+    var open = document.getElementById("open");
+    var open1 = document.getElementById("open1");
+    open.addEventListener("click", function(){
+      open1.style["display"] = "block";
+    });
+
+    
+    var close = document.getElementById("close");
+    close.addEventListener("click", function(){
+      open1.style["display"] = "none";
+    });
+
+  </script>
+
 
 </body>
 </html>

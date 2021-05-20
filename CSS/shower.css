@@ -61,14 +61,13 @@ li.list_title{
 
 li.list_title ul{
   margin-top: 5px;
-  margin-left: 18px;
 }
 
-li.list_title li{
+li.list_title > ul > li{
   margin-bottom: 2px;
 }
 
-li.list_title div{
+li.list_title > div{
   /* border: 1px solid; */
   display: inline-flex;
   width: 12px;
@@ -97,6 +96,7 @@ div.title{
   /* border: 1px solid red; */
   color: #3D3027;
   display: flex;
+  margin-left: 65px;
 }
 
 

@@ -18,7 +18,7 @@ main{
 div.title{
   /* border: 1px solid green; */
   display: inline-flex;
-  margin: 0 0 50px 30px;
+  margin: 0 0 50px 50px;
   font-size: 20px;
   color: #3D3027;
 }

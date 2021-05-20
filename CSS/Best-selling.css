@@ -15,16 +15,25 @@ main{
   margin: 0 auto;
 }
 
-div.banner, div.banner img{
+div.banner{
   max-width: 100%;
   min-width: 1200px;
+  height: 260px;
+  font-size: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+div.banner img{
+  width: 100%;
   font-size: 0;
 }
+
 
 div.title{
   /* border: 1px solid green; */
   display: inline-flex;
-  margin: 30px 0 0 30px;
+  margin: 30px 0 0 200px;
   font-size: 20px;
   color: #3D3027;
 }
@@ -60,16 +69,15 @@ div.best_list h2{
   margin-bottom: 20px;
 }
 
-div.best_word1 p:nth-child(6), div.best_word2 p:nth-child(6), div.best_word3 p:nth-child(6), div.best_word4 p:nth-child(6), div.best_word5 p:nth-child(6){
-  margin-top: 20px;
-}
 
-div.best_word1 a, div.best_word2 a, div.best_word3 a, div.best_word4 a, div.best_word5 a{
-  color: #3D3027;
-}
-
-div.best_word1 a:hover, div.best_word2 a:hover, div.best_word3 a:hover, div.best_word4 a:hover, div.best_word5 a:hover{
-  color: #b2966b;
+div.best_word > a{
+  /* border: 1px solid green; */
+  background-color: #3D3027;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 3px 10px;
 }
 
 
