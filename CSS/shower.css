@@ -11,15 +11,17 @@
 
 main{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 
+
+
+
 div.banner{
-  max-width: 100%;
-  min-width: 1200px;
-  height: 260px;
+  width: 100%;
+  max-height: 260px;
   font-size: 0;
   overflow: hidden;
   margin-bottom: 30px;
@@ -68,7 +70,7 @@ li.list_title > ul > li{
 }
 
 li.list_title > div{
-  /* border: 1px solid; */
+  /* border: 1px solid purple; */
   display: inline-flex;
   width: 12px;
   
@@ -81,6 +83,14 @@ li.list_title img{
 li.list_title li :hover{
   color: #b2966b;
   font-weight: 700;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+  div.list_border{
+    width: 140px;
+    font-size: 14px;
+    height: 400px;
+  }
 }
 
 
@@ -113,7 +123,7 @@ ul.item_list{
 
 ul.item_list li{
   /* border: 1px solid black; */
-  width: 250px;
+  max-width: 250px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -141,4 +151,28 @@ ul.item_list a:hover{
 
 ul.item_list button:hover{
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.title{
+    margin-left: 0px;
+  }
+
+  ul.item_list li{
+    /* border: 1px solid black; */
+    width: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.title{
+    margin-left: 0px;
+  }
+
+  ul.item_list li{
+    /* border: 1px solid black; */
+    width: 250px;
+  }
 }

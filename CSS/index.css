@@ -10,14 +10,17 @@
 
 main{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-div.index_banner, div.index_banner img{
-  max-width: 100%;
-  min-width: 1200px;
+div.index_banner{
+  width: 100%;
   font-size: 0;
+}
+
+div.index_banner > img{
+  width: 100%;
 }
 
 div.circle{
@@ -46,14 +49,15 @@ div.aboutus{
   /* border: 1px solid purple; */
   display: flex;
   margin-bottom: 200px;
+  max-width: 100%;
+  position: relative;
 }
 
 div.aboutus_pic{
   /* border: 1px solid red; */
-  width: 500px;
+  max-width: 500px;
   font-size: 0;
   margin-left: 150px;
-  position: relative;
   display: flex;
 }
 
@@ -62,14 +66,38 @@ div.aboutus_pic img{
   z-index: 1;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.aboutus{
+    position: static;
+  }
+  
+  div.aboutus_pic{
+    max-width: 400px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.aboutus{
+    position: static;
+  }
+  
+  div.aboutus_pic{
+    max-width: 300px;
+    margin-left: 0;
+  }
+}
+
+
+
 div.aboutus_talk{
-  background-color: #423730;
-  height: 300px;
-  width: 700px;
+  background-color: #3d3027;
+  min-height: 300px;
+  max-width: 700px;
   padding-left: 350px;
   padding-right: 20px;
   position: absolute;
-  left: 200px;
+  left: 350px;
   bottom: -50px;
 }
 
@@ -89,12 +117,56 @@ div.aboutus_talk p{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.aboutus_talk{
+    min-height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: static;
+  }
+  
+  div.aboutus_talk h3{
+    padding-top: 100px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px){
+  div.aboutus_talk{
+    min-height: 300px;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: static;
+  }
+  
+  div.aboutus_talk h3{
+    padding-top: 50px;
+  }
+}
+
+
 
 
 div.pushitem{
   /* border: 1px solid red; */
   margin-bottom: 400px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.pushitem{
+    margin-bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.pushitem{
+    margin-bottom: 150px;
+  }
+}
+
+
 
 div.pushitem_last_border{
   /* border: 1px solid green; */
@@ -115,7 +187,6 @@ ul.pushitem_last{
 
 ul.pushitem_last li:first-child{
   border-bottom: 2px solid white;
-  /* padding: 0px 10px 0 10px; */
   font-weight: 700;
   background-color: #3D3027;
 }
@@ -160,6 +231,22 @@ ul.pushitem_pic li > a:hover{
   color: #b2966b;
 }
 
+@media screen and (max-width: 768px){
+  ul.pushitem_pic{
+    /* border: 1px solid blue; */
+    padding: 20px 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  ul.pushitem_pic li{
+    /* border: 1px solid black; */
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+}
 
 
 
@@ -167,29 +254,51 @@ div.ceremony{
   /* border: 1px solid purple; */
   display: flex;
   margin-bottom: 150px;
+  position: relative;
 }
 
 div.ceremony_pic{
   /* border: 1px solid red; */
-  width: 500px;
+  max-width: 500px;
   font-size: 0;
   position: absolute;
   bottom: 50px;
-  right: -200px;
+  left: 550px;
 }
 
 div.ceremony_pic img{
   width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.ceremony{
+    position: static;
+  }
+  
+  div.ceremony_pic{
+    min-width: 400px;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.ceremony{
+    position: static;
+  }
+  
+  div.ceremony_pic{
+    min-width: 300px;
+    position: static;
+  }
+}
+
 div.ceremony_talk{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   background-color: #3D3027;
-  width: 700px;
-  height: 300px;
+  max-width: 700px;
+  min-height: 300px;
   padding-right: 350px;
   padding-left: 20px;
-  position: relative;
   margin-left: 150px;
 }
 
@@ -206,6 +315,32 @@ div.ceremony_talk p{
   color: white;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.ceremony_talk{
+    min-height: 300px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+  
+  
+  div.ceremony_talk h3{
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.ceremony_talk{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+  
+  
+  div.ceremony_talk h3{
+    padding-top: 50px;
+  }
+}
 
 
 
@@ -218,7 +353,7 @@ div.ceremony_border{
 
 div.ceremony_step{
   /* border: 1px solid blue; */
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   font-size: 0;
   display: flex;
@@ -228,7 +363,7 @@ div.ceremony_step{
 
 div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
   /* border: 1px solid purple; */
-  width: 300px;
+  max-width: 300px;
   font-size: 1rem;
   color: #3D3027;
   display: flex;
@@ -247,7 +382,7 @@ div.step a{
 
 div.ceremony_step1_pic, div.ceremony_step2_pic, div.ceremony_step3_pic{
   /* border: 1px solid green; */
-  width: 300px;
+  max-width: 300px;
   font-size: 0;
   margin-bottom: 50px;
 }
@@ -269,6 +404,25 @@ div.ceremony_step1 span, div.ceremony_step2 span, div.ceremony_step3 span{
   display: block;
   margin-bottom: 20px;
   color: #b2966b;
+}
+
+@media screen and (max-width: 768px){  
+  div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
+    max-width: 270px;
+  }
+  
+  div.step a{
+    margin-top: 20px;
+  }
+  
+  div.ceremony_step1_pic, div.ceremony_step2_pic, div.ceremony_step3_pic{
+    max-width: 270px;
+  }
+
+  div.ceremony_step1, div.ceremony_step2_pic, div.ceremony_step3{
+    margin-right: 0;
+  }
+
 }
 
 
@@ -298,6 +452,18 @@ div.insta_pic_pose{
   grid-template-rows: auto;
   grid: "pic1 pic1 pic2 pic3" "pic1 pic1 pic4 pic5" 
   "pic7 pic8 pic6 pic6" "pic9 pic10 pic6 pic6"
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.insta_pic_pose{
+    padding: 50px 100px 130px 100px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.insta_pic_pose{
+    padding: 50px 50px 130px 50px;
+  }
 }
 
 div.insta_pic_pose img{

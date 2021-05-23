@@ -11,14 +11,13 @@
 
 main{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 div.banner{
-  max-width: 100%;
-  min-width: 1200px;
-  height: 260px;
+  width: 100%;
+  max-height: 260px;
   font-size: 0;
   overflow: hidden;
   margin-bottom: 30px;
@@ -32,10 +31,26 @@ div.banner img{
 
 div.title{
   /* border: 1px solid green; */
-  display: inline-flex;
-  margin: 30px 0 0 200px;
+  display: flex;
+  margin-top: 30px;
+  margin: auto;
+  width: 800px;
   font-size: 20px;
   color: #3D3027;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.title{
+    width: 600px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.title{
+    width: 500px;
+    margin-bottom: 30px;
+  }
 }
 
 div.best_border{
@@ -53,14 +68,25 @@ div.best_list{
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.best_list{
+  width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.best_list{
+    width: 500px;
+    }
+}
+
 div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
   /* border: 1px solid green; */
-  width: 400px;
+  max-width: 400px;
   color: #3D3027;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -84,7 +110,7 @@ div.best_word > a{
 
 div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
   /* border: 1px solid purple; */
-  width: 400px;
+  max-width: 400px;
   font-size: 0;
 }
 
@@ -92,3 +118,28 @@ div.best_list img{
   width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
+    min-width: 300px;
+    max-width: 0;
+  }  
+  
+  div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
+    min-width: 300px;
+    max-width: 0;
+
+  }
+}
+
+@media screen and (max-width: 768px){
+  div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
+    min-width: 250px;
+    max-width: 0;
+  }  
+  
+  div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
+    min-width: 250px;
+    max-width: 0;
+  }
+
+}

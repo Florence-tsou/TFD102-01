@@ -10,7 +10,7 @@ div.footer_border{
   font-size: 0;
   justify-content: center;
   max-width: 100%;
-  min-width: 1200px;
+  margin: 0 auto;
 }
 
 ul.footer_list{

@@ -1,7 +1,7 @@
 header {
   padding: 30px 0 15px 0;
   /* border: 1px solid red; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -9,7 +9,7 @@ div.menu_header {
   border-bottom: 2px solid #3D3027;
   display: flex;
   height: 35px;
-  width: 1200px;
+  max-width: 1200px;
   justify-content: space-between;
 }
 
@@ -23,7 +23,7 @@ div.logo a>img {
   width: 100%;
 }
 
-div.menu_header ul {
+.abc {
   /* border: 1px solid blue; */
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ div.menu_header ul {
   width: 700px;
 }
 
-div.menu_header ul>li>a {
+ul.abc > li > a {
   text-decoration: none;
   color: #3D3027;
   font-weight: 700;
@@ -53,6 +53,7 @@ div.user_list {
 div.user_list > a {
   /* border: 1px solid blue; */
   text-decoration: none;
+  margin-left: 10px;
   margin-right: 10px;
   font-size: 0;
   display: block;
@@ -61,8 +62,6 @@ div.user_list > a {
 div.user_list a>img {
   width: 80%;
 }
-
-
 
 #buy_list {
   width: 100px;
@@ -99,10 +98,6 @@ div.cart_list div {
   margin-bottom: 15px;
 }
 
-div.cart_list > tr :first-child{
-  border: 1px solid red;
-}
-
 a.go_buy {
   /* border: 1px solid #3D3027; */
   background-color: #3D3027;
@@ -123,3 +118,48 @@ div.cart_hover{
 div.cart_hover:hover div.cart_list {
   display: block;
 }
+
+div.hamburger{
+  /* border: 1px solid blue; */
+  font-size: 0;
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  header{
+    padding: 15px 0 10px;
+  }
+
+  .abc{
+    border: 1px solid #3D3027;
+    z-index: 1;
+    display: none;
+    width: 130px;
+    position: absolute;
+    padding: 20px 0 0 0;
+    text-align: center;
+    right: 0;
+    top: 50px;
+  }
+
+.abc > li{
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+  }
+
+  div.cart_hover{
+    margin-right: 10px;
+  }
+
+  div.hamburger{
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .test {
+    display: block;
+  }
+
+}
+
