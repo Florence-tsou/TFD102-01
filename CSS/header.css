@@ -91,6 +91,11 @@ div.cart_list {
   z-index: 1;
 }
 
+table.list_item td p{
+  /* border: 1px solid blue; */
+  word-wrap: break-word;
+}
+
 div.cart_list div {
   /* border: 1px solid red; */
   display: flex;
@@ -142,7 +147,7 @@ div.hamburger{
     top: 50px;
   }
 
-.abc > li{
+  .abc > li{
     /* border: 1px solid red; */
     margin-bottom: 20px;
   }

@@ -94,3 +94,16 @@ div.follow_us li > a{
   background-color: #3D3027;
   font-size: 0;
 }
+
+div.text{
+  border: 1px solid #3D3027;
+  background-color: #3D3027;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.text p, div.text p > a{
+  background-color: #3D3027;
+  color: white;
+}
