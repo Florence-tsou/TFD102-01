@@ -69,14 +69,14 @@
       <ul class="QA_list">
         <li class="Q">
           <p>Ｑ：請問如何看產品效期呢？</p>
-          <div class="add"><img src="./images/add.png"></div>
+          <div class="add"><img src="./images/arrow-down.png"></div>
         </li>
         <li class="A">
           <p>Wonderland全系列商品皆有於中文標籤上標示效期。效期標示方式為YYYY/MM/DD。</p>
         </li>
         <li class="Q">
           <p>Ｑ：如何打開身體磨砂膏？</p>
-          <div class="add"><img src="./images/minus-sign.png"></div>
+          <div class="add"><img src="./images/arrow-down.png"></div>
         </li>
         <li class="A">
           <p>1. 身體磨砂蓋和瓶身之間，找有明顯空隙的六個地方，如圖1。</p>
@@ -95,14 +95,14 @@
         </li>
         <li class="Q">
           <p>Ｑ：懷孕可以使用嗎？</p>
-          <div class="add"><img src="./images/add.png"></div>
+          <div class="add"><img src="./images/arrow-down.png"></div>
         </li>
         <li class="A">
           <p>Wonderland產品包含磨砂膏均不含防腐劑(parabens)、介面活性劑(SLS)與礦物油(Mineral Oil)，基本上都可以放心喔！不過每個人體質不同，如果想要更安心也可與專業醫師做諮詢。</p>
         </li>
         <li class="Q">
           <p>Ｑ：肌膚敏感可以使用嗎？</p>
-          <div class="add"><img src="./images/add.png"></div>
+          <div class="add"><img src="./images/arrow-down.png"></div>
         </li>
         <li class="A">
           <p>Wonderland產品包含磨砂膏均不含防腐劑(parabens)、介面活性劑(SLS)與礦物油(Mineral Oil)，但因為每個人肌膚的敏感程度不同，若較敏感的肌膚仍然建議與醫師諮詢並到櫃上試用。</p>
@@ -142,7 +142,7 @@
         <p class="hashtag">#WonderlandTaiwan</p>
       </div>
     </div>
-    <div class="text">
+    <div class="text_footer">
       <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</p>
       <p>參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>，後續會由專人協助處理
       </p>
@@ -153,25 +153,21 @@
 
 
   <script>
-    // var que = document.querySelectorAll(".Q");
-    // var ans = document.querySelectorAll(".A");
-    // console.log(ans);
 
     var que = document.getElementsByClassName("Q");
     var ans = document.getElementsByClassName("A");
-    console.log(ans);
+    // console.log(ans);
 
-    for(x = 0; x < que.length; x++){
-      que[0].addEventListener("click", function(){
-        if(ans[x].style["display"] = "none"){
-          ans[x].style["display"] = "block";
-        }else{
+    for(let x = 0; x < que.length; x++){
+      que[x].addEventListener("click", function (){
+        // console.log(x);
+        if(ans[x].style["display"] == "block"){
           ans[x].style["display"] = "none";
-        }
+        }else{
+          ans[x].style["display"] = "block";
+        };
       });
     };
-
-
 
     
   </script>

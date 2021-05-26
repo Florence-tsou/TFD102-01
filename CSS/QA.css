@@ -10,7 +10,7 @@
 }
 
 main{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@ ul.QA_list{
   border-top: 1px solid #3D3027;
   border-right: 1px solid #3D3027;
   border-left: 1px solid #3D3027;
-  max-width: 800px;
+  width: 800px;
   list-style: none;
   padding: 0;
 }
@@ -57,7 +57,7 @@ div.add{
 li.A{
   border-bottom: 1px solid #3D3027;
   padding: 30px;
-  /* display: none; */
+  display: none;
 }
 
 @media screen and (max-width: 768px){

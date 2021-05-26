@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <link href="./CSS/index.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-  <title>Wonderland</title>
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>  <title>Wonderland</title>
 </head>
 
 <body>
@@ -64,25 +63,15 @@
   </header>
 
   
-  <!-- <div class="single-item">
-    <div><img src="./images/index_banner.jpg"></div>
-    <div><img src="./images/index_banner2.jpg"></div>
-    <div><img src="./images/index_banner3.jpg"></div>
-  </div> -->
-
-  <div class="index_banner">
-    <img src="./images/index_banner.jpg">
+  <div class="single-item">
+    <div class="single_img"><img src="./images/index_banner.jpg"></div>
+    <div class="single_img"><img src="./images/index_banner2.jpg"></div>
+    <div class="single_img"><img src="./images/index_banner3.jpg"></div>
+    <div class="single_img"><img src="./images/index_banner4.jpg"></div>
   </div>
 
-  <main>
 
-    <div class="circle">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+  <main>
 
     <div class="aboutus">
         <div class="aboutus_pic">
@@ -239,7 +228,7 @@
         <p class="hashtag">#WonderlandTaiwan</p>
       </div>
     </div>
-    <div class="text">
+    <div class="text_footer">
       <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。</p>
       <p>參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>，後續會由專人協助處理
       </p>
@@ -248,19 +237,24 @@
 
   <script src="./Javascript/header.js"></script>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="./Javascript/slick.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-        setting-name: setting-value
-      });
+    $('.single-item').slick({
+        centerMode:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,  
+        dots: true,
+        arrows: false,
+        fade:true,
+        infinity:true,
     });
-  </script> -->
+  </script>
 
 </body>
 

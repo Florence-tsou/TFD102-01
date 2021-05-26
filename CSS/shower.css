@@ -63,6 +63,7 @@ li.list_title{
 
 li.list_title ul{
   margin-top: 5px;
+  display: none;
 }
 
 li.list_title > ul > li{

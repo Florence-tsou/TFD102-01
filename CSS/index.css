@@ -14,54 +14,22 @@ main{
   margin: 0 auto;
 }
 
-div.index_banner{
+div.single-item{
+  /* border: 1px solid red; */
   width: 100%;
   font-size: 0;
 }
 
-div.index_banner > img{
+div.single_img > img{
   width: 100%;
 }
-
-div.circle{
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px){
-  div.circle{
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 768px){
-  div.circle{
-    margin-bottom: 30px;
-  }
-}
-
-div.circle div{
-  border: 1px solid #3D3027;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 5px;
-}
-
-div.circle div:first-child{
-  background-color: #3D3027;
-}
-
-
 
 div.aboutus{
   /* border: 1px solid purple; */
   display: flex;
+  margin-top: 100px;
   margin-bottom: 200px;
-  max-width: 100%;
+  width: 100%;
   max-height: 500px;
   min-height: 300px;
   position: relative;
@@ -153,7 +121,6 @@ div.aboutus_talk p{
 
 @media screen and (max-width: 768px){
   div.aboutus_talk{
-    min-height: 300px;
     vertical-align: middle;
     padding-left: 20px;
     padding-right: 20px;
