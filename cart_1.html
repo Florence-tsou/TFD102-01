@@ -169,30 +169,34 @@
           <div class="recipient_contact">
             <p>捐贈發票</p>
             <label>
-              <input type="radio" name="donate_invoice">
+              <input type="radio" name="donate_invoice" id="close">
               是
             </label>
             <label>
-              <input type="radio" name="donate_invoice" checked>
+              <input type="radio" name="donate_invoice" id="open" checked>
               否
             </label>
           </div>
           <br>
 
-          <div class="recipient_contact">
+          <div class="recipient_contact a">
             <p>電子發票載具</p>
             <label>
-              <input type="radio" name="invoice_type" checked>
+              <input type="radio" name="invoice_type" id="three">
+              三聯式發票
+            </label>
+            <label>
+              <input type="radio" name="invoice_type" class="invoice" checked>
               二聯式雲端發票
             </label>
             <label>
-              <input type="radio" name="invoice_type">
-              手機載具
+              <input type="radio" name="invoice_type" class="invoice">
+              雲端載具
             </label>
           </div>
           <br>
 
-          <div class="recipient_contact">
+          <!-- <div class="recipient_contact b">
             <p>需要統一編號</p>
             <label>
               <input type="radio" name="uniform_numbers" checked>
@@ -203,15 +207,15 @@
               否
             </label>
           </div>
-          <br>
+          <br> -->
 
-          <div class="recipient_contact">
+          <div class="recipient_contact c">
             <p>*統一編號</p>
             <input type="text" name="uniform_numbers">
           </div>
           <br>
 
-          <div class="recipient_contact">
+          <div class="recipient_contact c">
             <p>*公司抬頭</p>
             <input type="text" name="uniform_name">
           </div>
@@ -266,6 +270,7 @@
   </footer>
 
   <script src="./Javascript/header.js"></script>
+  <script src="./Javascript/cart1.js"></script>
 
 
 </body>

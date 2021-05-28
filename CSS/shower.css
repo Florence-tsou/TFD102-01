@@ -52,9 +52,12 @@ ul.list a{
   color: #3d3027;
 }
 
-li.list_title > a{
+div.click_img > p{
+  /* border: 1px solid red; */
+  display: inline-block;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 li.list_title{
@@ -70,11 +73,11 @@ li.list_title > ul > li{
   margin-bottom: 2px;
 }
 
-li.list_title > div{
+div.shower_img{
   /* border: 1px solid purple; */
   display: inline-flex;
   width: 12px;
-  
+  cursor: pointer;
 }
 
 li.list_title img{

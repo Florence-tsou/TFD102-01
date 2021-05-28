@@ -10,7 +10,7 @@
 }
 
 main{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -204,6 +204,7 @@ div.quantity{
   display: inline-flex;
   margin-right: 2px;
   margin-left: 12px;
+  cursor: pointer;
 }
 
 div.quantity1{
@@ -211,6 +212,7 @@ div.quantity1{
   width: 10px;
   display: inline-flex;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){

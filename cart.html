@@ -96,13 +96,13 @@
 
         <div class="item">
           <p>經典身體磨砂膏</p>
-          <p id="price">2,080</p>
+          <p id="price">2080</p>
           <div class="select">
             <div class="quantity"><img src="images/minus-sign.png" id="minus"></div>
             <input type="text" value="1" id="abc">
             <div class="quantity1"><img src="./images/add.png" id="plus"></div>
           </div>
-          <p>2,080</p>
+          <p class="total_money">2,080</p>
           <div class="img"><img src="./images/garbage.png"></div>
         </div>
 
@@ -111,7 +111,7 @@
 
         <div class="total">
           <p>訂購總金額</p>
-          <p>$2,080</p>
+          <p class="total_money">$2,080</p>
         </div>
 
       </div>
@@ -168,8 +168,17 @@
     var minus = document.getElementById("minus");
     var abc = document.getElementById("abc");
 
+    let total = document.getElementsByClassName("total_money");
+    let price = document.getElementById("price");
+
+
     add.addEventListener("click", function(){
       abc.value++;
+      for(let i = 0; i < total.length; i++){
+        let nn = parseInt(abc.value);
+        let pp = parseInt(price.innerText);
+        total[i].innerText = pp * nn;
+      };
     });
 
     minus.addEventListener("click", function(){
@@ -177,8 +186,16 @@
         abc.value = 1;
       }else{
         abc.value--;
+        for(let i = 0; i < total.length; i++){
+          let nn = parseInt(abc.value);
+          let pp = parseInt(price.innerText);
+          total[i].innerText = pp * nn;
+        };
       }
     });
+
+
+
   </script>
 
 </body>

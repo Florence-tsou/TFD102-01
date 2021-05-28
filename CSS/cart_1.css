@@ -267,6 +267,10 @@ div.recipient_contact{
   margin-left: 22px;
 }
 
+div.recipient_contact.c{
+  display: none;
+}
+
 div.recipient_contact p{
   /* border: 1px solid blue; */
   width: 100px;
