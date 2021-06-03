@@ -26,12 +26,24 @@ div.title{
   max-width: 600px;
 }
 
+@media screen and (max-width: 768px){
+  div.title{
+    margin-left: 10px;
+  }
+}
+
 
 div.form_border{
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px){
+  div.form_border{
+    margin-left: 10px;
+  }
 }
 
 div.form{
@@ -48,6 +60,7 @@ div.write input{
 
 div.write textarea{
   border: 1px solid #3D3027;
+  resize: vertical;
 }
 
 div.write button{

@@ -1,7 +1,7 @@
 var hamburger = document.getElementById("hamburger");
-var open = document.getElementById("hamburger_open");
+var open_1 = document.getElementById("hamburger_open");
 
 
 hamburger.addEventListener("click", function(){
-  open.classList.toggle("test");
+  open_1.classList.toggle("test");
 });
