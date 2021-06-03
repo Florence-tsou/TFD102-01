@@ -85,8 +85,8 @@
     <div class="caption_out">
       <div class="caption_border">
         <ul class="caption_list">
-          <li><a href="#">香氛</a></li>
-          <li><a href="#">使用方法</a></li>
+          <li><a href="#" id="nioi">香氛</a></li>
+          <li><a href="#" id="use">使用方法</a></li>
         </ul>
         <div class="text">
           <p>揉合廣藿香、薰衣草、香蘭三種氣息，以獨特廣藿香喚醒感官，紫色薰衣草淡雅花香鎮靜放鬆心情，香蘭調和平衡，提振精神。</p>
@@ -138,25 +138,7 @@
   </footer>
 
   <script src="./Javascript/header.js"></script>
-
-
-  <script>
-    var add = document.getElementById("plus");
-    var minus = document.getElementById("minus");
-    var abc = document.getElementById("abc");
-
-    add.addEventListener("click", function(){
-      abc.value++;
-    });
-
-    minus.addEventListener("click", function(){
-      if(abc.value <= 1){
-        abc.value = 1;
-      }else{
-        abc.value--;
-      }
-    });
-  </script>
+  <script src="Javascript/item.js"></script>
 
 
 </body>
