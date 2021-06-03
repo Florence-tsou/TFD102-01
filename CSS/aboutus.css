@@ -37,6 +37,7 @@ div.title{
 
 div.story{
   /* border: 1px solid blue; */
+  max-width: 100%;
   display: inline-flex;
   margin: 0 30px 100px 30px;
 
@@ -47,6 +48,16 @@ div.story_img{
   font-size: 0;
   max-width: 600px;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 576px){
+  div.story{
+    flex-wrap: wrap;
+  }
+
+  div.story_img{
+    margin-right: 0px;
+  }
 }
 
 div.story_img img{
