@@ -56,7 +56,8 @@ div.story_img{
   }
 
   div.story_img{
-    margin-right: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 
@@ -68,6 +69,13 @@ div.story_word{
   /* border: 1px solid red; */
   width: 500px;
   color: #3D3027;
+}
+
+@media screen and (max-width: 576px){
+  div.story_word{
+  margin-right: 5px;
+  margin-left: 5px;
+  }
 }
 
 div.story_word h3{

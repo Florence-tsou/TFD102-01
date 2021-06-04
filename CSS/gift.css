@@ -127,6 +127,12 @@ li.item{
   text-align: center;
 }
 
+@media screen and (max-width: 576px){
+  li.item{
+  width: 200px;
+  }
+}
+
 li.item img{
   width: 100%;
 }
