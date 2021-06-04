@@ -34,7 +34,7 @@ div.title{
   display: flex;
   margin-top: 30px;
   margin: auto;
-  width: 800px;
+  max-width: 800px;
   font-size: 20px;
   color: #3D3027;
 }
