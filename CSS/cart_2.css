@@ -61,6 +61,20 @@ div.text{
   transform: translateX(-10%);
 }
 
+@media screen and (max-width:576px){
+  div.circle1{
+    width: 80px;
+    height: 80px;
+  }
+
+  div.text{
+    width: 90px;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    transform: translateX(-5%);
+  }
+}
+
 div.circle2{
   border: 1px solid #3d3027;
   background-color: white;
@@ -96,11 +110,34 @@ div.text1{
   transform: translateX(-25%);
 }
 
+@media screen and (max-width:576px){
+  div.circle2{
+    width: 80px;
+    height: 80px;
+  }
+
+  div.text1{
+    width: 150px;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    transform: translateX(-27%);
+  }
+}
+
 div.triangle{
   border-top: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom:15px solid transparent;
   border-left: 20px solid #3d3027;
+}
+
+@media screen and (max-width:576px){
+  div.triangle{
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left: 15px solid #3d3027;
+  }
 }
 
 div.order_finish{
@@ -125,4 +162,18 @@ div.finish_word p:last-child{
   font-size: 18px;
   font-weight: 700;
   margin-top: 5px;
+}
+
+@media screen and (max-width:576px){
+  div.order_finish{
+    margin-bottom: 100px;
+  }
+
+  div.finish_word p:first-child{
+    font-size: 24px;
+  }
+
+  div.finish_word p:last-child{
+    font-size: 14px;
+  }
 }

@@ -61,6 +61,20 @@ div.text{
   transform: translateX(-10%);
 }
 
+@media screen and (max-width:576px){
+  div.circle1{
+    width: 80px;
+    height: 80px;
+  }
+
+  div.text{
+    width: 90px;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    transform: translateX(-5%);
+  }
+}
+
 div.circle2{
   border: 1px solid #3d3027;
   background-color: white;
@@ -96,6 +110,20 @@ div.text1{
   transform: translateX(-25%);
 }
 
+@media screen and (max-width:576px){
+  div.circle2{
+    width: 80px;
+    height: 80px;
+  }
+
+  div.text1{
+    width: 150px;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    transform: translateX(-27%);
+  }
+}
+
 div.triangle{
   border-top: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -103,6 +131,14 @@ div.triangle{
   border-left: 20px solid #3d3027;
 }
 
+@media screen and (max-width:576px){
+  div.triangle{
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left: 15px solid #3d3027;
+  }
+}
 
 
 
@@ -114,6 +150,12 @@ div.cart{
   margin: 0 auto;
   font-size: 0;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 576px){
+  div.cart{
+    margin-bottom: 40px;
+  }
 }
 
 div.title{
@@ -186,22 +228,27 @@ div.title p:nth-child(5){
 @media screen and (max-width: 576px) {
   div.title p:nth-child(1){
     width: 300px;
+    font-size: 0.8rem;
   }
 
   div.title p:nth-child(2){
     width: 50px;
+    font-size: 0.8rem;
   }
 
   div.title p:nth-child(4){
     width: 50px;
+    font-size: 0.8rem;
   }
 
   div.title p:nth-child(3){
     width: 180px;
+    font-size: 0.8rem;
   }
 
   div.title p:nth-child(5){
     margin-left: 10px;
+    font-size: 0.8rem;
   }
 
 }
@@ -261,18 +308,22 @@ div.select {
 @media screen and (max-width: 576px) {
   div.item p:nth-child(1){
     width: 300px;
+    font-size: 0.8rem;
   }
 
   div.item p:nth-child(2){
     width: 50px;
+    font-size: 0.8rem;
   }
 
   div.item p:nth-child(4){
     width: 50px;
+    font-size: 0.8rem;
   }
 
   div.select {
     width: 180px;
+    font-size: 0.8rem;
   }
 }
 
@@ -342,8 +393,6 @@ div.img{
   }
 }
 
-
-
 div.no{
   height: calc(100% - 35px - 35px - 30px);
 }
@@ -371,6 +420,18 @@ div.total p:last-child{
   font-size: 18px;
   font-weight: 700;
   margin-right: 100px;
+}
+
+@media screen and (max-width: 768px){
+  div.total p:first-child{
+    font-size: 16px;
+    margin-right: 30px;
+  }
+  
+  div.total p:last-child{
+    font-size: 16px;
+    margin-right: 30px;
+  }
 }
 
 

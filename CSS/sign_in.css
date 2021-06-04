@@ -23,6 +23,14 @@ div.border{
   margin-top: 80px;
   margin-bottom: 100px;
   display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  div.border{
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  }
 }
 
 div.sign_in{
@@ -30,6 +38,14 @@ div.sign_in{
   width: 400px;
   height: 300px;
   padding-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  div.sign_in{
+  border-right: none;
+  border-bottom: 2px solid #3d3027;
+  padding-top: 0;
+  }
 }
 
 
@@ -79,6 +95,14 @@ div.else{
   width: 400px;
   text-align: center;
   padding-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  div.else{
+    border-left: none;
+    border-top: 2px solid #3d3027;
+
+  }
 }
 
 a.log{

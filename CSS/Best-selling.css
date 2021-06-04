@@ -93,7 +93,7 @@ div.best_list{
   }
 
   div.best_border{
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   }
 }
 
@@ -169,12 +169,12 @@ div.best_list img{
     min-width: 200px;
     max-width: 0;
     font-size: 0.7rem;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }  
   
   div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
     min-width: 200px;
     max-width: 0;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 }
