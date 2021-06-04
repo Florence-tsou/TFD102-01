@@ -361,10 +361,18 @@ div.quantity1{
   }
   
   div.quantity1{
-    /* border: 1px solid blue; */
-    width: 10px;
     display: inline-flex;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.quantity{
+    width: 15px;
+  }
+  
+  div.quantity1{
+    width: 15px;
   }
 }
 
