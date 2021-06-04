@@ -66,6 +66,12 @@ ul.news_list pre{
   cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+  ul.news_list pre{
+  font-size: 14px;
+  }
+}
+
 ul.news_list pre:hover{
   color: #b2966b;
 }
@@ -154,6 +160,7 @@ div.item_img > img{
 
   div.title{
     max-width: 400px;
+    margin-bottom: 30px;
   }
   
   div.news_border{
@@ -162,7 +169,7 @@ div.item_img > img{
   }
 
   ul.news_list{
-    width: 400px;
+    max-width: 400px;
   }
 
   div.news_item{

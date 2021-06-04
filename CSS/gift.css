@@ -40,6 +40,7 @@ div.title{
     margin: 30px 0 50px 30px;
   }
 }
+
 div.story{
   /* border: 1px solid blue; */
   display: inline-flex;
@@ -47,6 +48,12 @@ div.story{
   justify-content: center;
   width: 100%;
   
+}
+
+@media screen and (max-width: 768px){
+  div.story{
+  flex-wrap: wrap;
+  }
 }
 
 div.story_img{
@@ -59,6 +66,7 @@ div.story_img{
 @media screen and (max-width: 992px){
   div.story_img{
     margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -68,8 +76,15 @@ div.story_img img{
 
 div.story_word{
   /* border: 1px solid red; */
-  width: 500px;
+  max-width: 500px;
   color: #3D3027;
+}
+
+@media screen and (max-width: 992px){
+  div.story_word{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 div.story_word h3{
@@ -77,6 +92,11 @@ div.story_word h3{
   text-align: center;
 }
 
+@media screen and (max-width: 768px){
+  div.story_word h3{
+    margin: 30px 0 30px 0;
+  }
+}
 
 
 div.push_border{
@@ -138,10 +158,17 @@ ul.butget_list{
   padding: 10px 20px;
   display: flex;
   justify-content: space-evenly;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   background-color: #3D3027;
   margin-bottom: 50px;
+  font-size: 0;
+}
+
+@media screen and (max-width:576px) {
+  ul.butget_list{
+    max-width: 400px;
+  }
 }
 
 ul.butget_list a{
@@ -149,6 +176,13 @@ ul.butget_list a{
   text-decoration: none;
   color: white;
   font-weight: 700;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:576px) {
+  ul.butget_list a{
+  font-size: 0.8rem;
+  }
 }
 
 ul.butget_list a:hover{

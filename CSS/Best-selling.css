@@ -46,9 +46,16 @@ div.title{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.title{
     width: 500px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.title{
+    max-width: 400px;
     margin-bottom: 30px;
   }
 }
@@ -70,14 +77,20 @@ div.best_list{
 
 @media screen and (min-width: 768px) and (max-width: 992px){
   div.best_list{
-  width: 600px;
+    width: 600px;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.best_list{
     width: 500px;
-    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.best_list{
+    width: 400px;
+  }
 }
 
 div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
@@ -131,10 +144,11 @@ div.best_list img{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
     min-width: 250px;
     max-width: 0;
+    font-size: 0.8rem;
   }  
   
   div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
@@ -142,4 +156,17 @@ div.best_list img{
     max-width: 0;
   }
 
+}
+
+@media screen and (max-width: 576px){
+  div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
+    min-width: 200px;
+    max-width: 0;
+    font-size: 0.7rem;
+  }  
+  
+  div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
+    min-width: 200px;
+    max-width: 0;
+  }
 }

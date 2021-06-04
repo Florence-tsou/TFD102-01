@@ -157,7 +157,7 @@ ul.item_list button:hover{
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){  
   div.title{
     margin-left: 0px;
   }
@@ -170,13 +170,25 @@ ul.item_list button:hover{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 602px) and (max-width: 768px){
+
   div.title{
     margin-left: 0px;
   }
 
   ul.item_list li{
     /* border: 1px solid black; */
-    width: 250px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 602px){
+  div.title{
+    margin-left: 0px;
+  }
+  
+  ul.item_list li{
+    /* border: 1px solid black; */
+    width: 130px;
   }
 }

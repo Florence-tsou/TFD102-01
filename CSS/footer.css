@@ -9,7 +9,7 @@ div.footer_border{
   display: flex;
   font-size: 0;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -30,7 +30,8 @@ ul.footer_list{
 
 @media screen and (max-width: 576px){
   ul.footer_list{
-  display: flex;
+  width: 100%;
+  justify-content: center;
   }
 }
 
@@ -113,10 +114,10 @@ div.follow_us{
   div.follow_us{
   border-top: 2px solid white;
   border-left: none;
+  width: 80%;
   margin-left: 0px;
   margin-top: 20px;
   margin-bottom: 10px;
-  vertical-align: middle;
   padding-right: 100px;
   }
 }
