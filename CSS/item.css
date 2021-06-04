@@ -76,6 +76,7 @@ div.quantity{
   display: inline-flex;
   margin-right: 2px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 div.quantity1{

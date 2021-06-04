@@ -344,6 +344,7 @@ div.quantity{
   margin-right: 2px;
   margin-left: 12px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 div.quantity1{
@@ -352,6 +353,7 @@ div.quantity1{
   display: inline-flex;
   margin-right: 15px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -386,6 +388,7 @@ div.img{
   margin-left: 100px;
   vertical-align: middle;
   padding-top: 2px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
