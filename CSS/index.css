@@ -49,18 +49,14 @@ div.aboutus{
   }
 }
 
-  div.aboutus_pic{
+
+div.aboutus_pic{
     /* border: 1px solid red; */
     max-width: 500px;
     font-size: 0;
     margin-left: 150px;
     display: flex;
-  }
-
-  div.aboutus_pic img{
-    width: 100%;
-    z-index: 1;
-  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
   div.aboutus_pic{
@@ -68,12 +64,25 @@ div.aboutus{
     margin-left: 0;
   }
 }
-
-@media screen and (max-width: 768px){
+  
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.aboutus_pic{
     max-width: 300px;
     margin-left: 0;
   }
+}
+
+@media screen and (max-width: 576px){
+  div.aboutus_pic{
+    max-width: 218px;
+    max-height: 218px;
+    margin-left: 0;
+  }
+}
+
+div.aboutus_pic img{
+  width: 100%;
+  z-index: 1;
 }
 
 
@@ -118,8 +127,7 @@ div.aboutus_talk p{
   
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.aboutus_talk{
     vertical-align: middle;
     padding-left: 20px;
@@ -129,6 +137,27 @@ div.aboutus_talk p{
   
   div.aboutus_talk h3{
     padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div.aboutus_talk{
+    vertical-align: middle;
+    min-width: 180px;
+    max-height: 218px;
+    min-height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: static;
+  }
+  
+  div.aboutus_talk h3{
+    padding-top: 10px;
+    font-size: 0.5rem;
+  }
+
+  div.aboutus_talk p{
+    font-size: 0.5rem;
   }
 }
 
@@ -169,6 +198,17 @@ ul.pushitem_last{
   padding: 0;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  ul.pushitem_last{
+  width: 400px;
+  font-size: 0.7rem;
+  }
+}
+
+ul.pushitem_last li{
+  background-color: #3D3027;
 }
 
 ul.pushitem_last li:first-child{
@@ -229,7 +269,7 @@ ul.pushitem_pic li > a:hover{
   
   ul.pushitem_pic li{
     /* border: 1px solid black; */
-    min-width: 250px;
+    width: 150px;
     margin-bottom: 20px;
   }
 }
@@ -242,8 +282,6 @@ div.ceremony{
   margin-bottom: 150px;
   position: relative;
 }
-
-
 
 div.ceremony_pic{
   /* border: 1px solid red; */
@@ -270,7 +308,7 @@ div.ceremony_pic img{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.ceremony{
     position: static;
     margin-bottom: 50px;
@@ -280,6 +318,17 @@ div.ceremony_pic img{
     min-width: 300px;
     position: static;
   }
+}
+
+@media screen and (max-width: 576px) {
+  div.ceremony{
+    position: static;
+    margin-bottom: 50px;
+  }
+  
+  div.ceremony_pic{
+    min-width: 160px;
+    position: static;  }
 }
 
 div.ceremony_talk{
@@ -319,19 +368,41 @@ div.ceremony_talk p{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.ceremony_talk{
     padding-right: 20px;
     padding-left: 20px;
     margin-left: 0px;
+    font-size: 0.9rem;
   }
   
   
   div.ceremony_talk h3{
     padding-top: 50px;
+    font-size: 0.9rem;
   }
 }
 
+@media screen and (max-width: 576px){
+  div.ceremony_talk{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0px;
+    min-width: 180px;
+    min-height: 200px;
+    font-size: 0.5rem;
+  }
+
+  div.ceremony_talk p{
+    font-size: 0.5rem;
+    overflow-y: auto;
+  }
+  
+  div.ceremony_talk h3{
+    padding-top: 10px;
+    font-size: 0.5rem;
+  }
+}
 
 
 
@@ -417,7 +488,7 @@ div.ceremony_step1 span, div.ceremony_step2 span, div.ceremony_step3 span{
   color: #b2966b;
 }
 
-@media screen and (max-width: 768px){  
+@media screen and (min-width: 576px) and (max-width: 768px){  
   div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
     max-width: 270px;
   }
@@ -434,6 +505,36 @@ div.ceremony_step1 span, div.ceremony_step2 span, div.ceremony_step3 span{
     margin-right: 0;
   }
 
+}
+
+@media screen and (max-width: 576px){
+  @media screen and (max-width: 768px){  
+    div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
+      max-width: 180px;
+      font-size: 0.8rem;
+    }
+  
+    div.ceremony_step1 h2, div.ceremony_step2 h2, div.ceremony_step3 h2{
+      font-size: 35px;
+    }
+  
+    div.ceremony_step1 span, div.ceremony_step2 span, div.ceremony_step3 span{
+      font-size: 18px;
+    }
+    
+    div.step a{
+      margin-top: 20px;
+    }
+    
+    div.ceremony_step1_pic, div.ceremony_step2_pic, div.ceremony_step3_pic{
+      max-width: 200px;
+    }
+  
+    div.ceremony_step1, div.ceremony_step2_pic, div.ceremony_step3{
+      margin-right: 5px;
+    }
+  
+  }
 }
 
 
