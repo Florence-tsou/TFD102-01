@@ -93,6 +93,16 @@ div.quantity1{
   vertical-align: baseline;
 }
 
+@media screen and (max-width: 576px){
+  div.quantity{
+  width: 8px;
+  }
+  
+  div.quantity1{
+    width: 8px;
+  }
+}
+
 div.quantity img, div.quantity1 img{
   width: 100%;
 }

@@ -371,11 +371,11 @@ div.quantity1{
 
 @media screen and (max-width: 576px){
   div.quantity{
-    width: 15px;
+    width: 8px;
   }
   
   div.quantity1{
-    width: 15px;
+    width: 8px;
   }
 }
 
