@@ -41,7 +41,7 @@
                     <td>
                       <p class="list_item_count">1</p>
                     </td>
-                    <td><img src="./images/garbage.png"></td>
+                    <td><img src="./images/garbage.png" id="garbage"></td>
                   </tr>
                   <tr>
                     <td><img src="./images/mosa2.jpg" id="buy_list"></td>
@@ -51,7 +51,7 @@
                     <td>
                       <p class="list_item_count">1</p>
                     </td>
-                    <td><img src="./images/garbage.png"></td>
+                    <td><img src="./images/garbage.png" id="garbage"></td>
                   </tr>
                 </table>
                 <div><a href="./cart.html" class="go_buy">前往結帳</a></div>
@@ -62,7 +62,7 @@
             </div>
         </div>
       </header>
-
+    
       <div class="banner">
         <img src="./images/news.jpg">
       </div>
@@ -166,7 +166,7 @@
 
     for(let i = 0; i < news.length; i++){
       news[i].addEventListener("click", function(){
-        open1.style["display"] = "block";
+        open1.style.display = "block";
         trans.style.opacity = "0.6";
       });
     };
@@ -174,7 +174,7 @@
     
     var close = document.getElementById("close");
     close.addEventListener("click", function(){
-      open1.style["display"] = "none";
+      open1.style.display = "none";
       trans.style.opacity = "1";
     });
 

@@ -142,11 +142,11 @@ ul.caption_list{
 
 ul.caption_list > li:first-child{
   margin-right: 50px;
-  font-weight: 700;
 }
 
-ul.caption_list li:first-child a{
+a.-on{
   border-bottom: 2px solid white;
+  font-weight: 700;
 }
 
 ul.caption_list a{
@@ -165,9 +165,12 @@ ul.caption_list a:hover{
 div.text{
   font-size: 1rem;
   padding: 10px 20px;
-  background-color: white;
+  /* display: none; */
 }
 
-div.text p{
-  background-color: white;
+
+div.use_method{
+  font-size: 1rem;
+  padding: 10px 20px;
+  display: none;
 }

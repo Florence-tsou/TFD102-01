@@ -103,6 +103,10 @@ div.cart_list div {
   margin-bottom: 15px;
 }
 
+#garbage{
+  cursor: pointer;
+}
+
 a.go_buy {
   /* border: 1px solid #3D3027; */
   background-color: #3D3027;
