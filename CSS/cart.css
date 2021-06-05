@@ -145,6 +145,7 @@ div.triangle{
 
 div.cart{
   border: 1px solid #3d3027;
+  /* box-sizing: content-box; */
   max-width: 1000px;
   height: 200px;
   margin: 0 auto;
