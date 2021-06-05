@@ -100,3 +100,199 @@ p.shop_name{
   }
 }
 
+
+
+div.reserve_border{
+  border: 2px solid #3D3027;
+  width: 400px;
+  text-align: center;
+  color: #3D3027;
+  position: absolute;
+  top: 200px;
+  left: 450px;
+  display: none;
+}
+
+div.cancel{
+  /* border: 1px solid black; */
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+#cancel{
+  cursor: pointer;
+}
+
+div.reserve_title{
+  /* border: 1px solid black; */
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+div.reserve_form{
+  /* border: 1px solid green; */
+  width: 300px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.reserve_form input{
+  border: 1px solid #3D3027;
+}
+
+div.reserve_shop, div.date, div.time, div.name, div.phone_number, div.email{
+  /* border: 1px solid blue; */
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+div.reserve_shop > p:last-child{
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+
+
+div.reserve_shop > p:first-child, div.date > p, div.time > p, div.name > p, div.phone_number > p, div.email > p{
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+div.button{
+  margin-top: 25px;
+}
+
+div.button > button{
+  border: 1px solid #3D3027;
+  background-color: #3D3027;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#trans{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+#out{
+  /* border: 1px solid red; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.reserve_border{
+    top: 200px;
+    left: 300px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  div.reserve_border{
+    top: 200px;
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.reserve_border{
+    width: 300px;
+    top: 200px;
+    left: 50px;
+    font-size: 0.8rem;
+  }
+
+  div.reserve_form{
+    width: 230px;
+    height: 250px;
+  }
+
+  div.button > button{
+  padding: 3px 10px;
+  }
+
+  div.reserve_shop > p:first-child, div.date > p, div.time > p, div.name > p, div.phone_number > p, div.email > p{
+  width: 70px;
+  }
+
+}
+
+
+div.reserve_ok{
+  border: 2px solid #3D3027;
+  width: 400px;
+  text-align: center;
+  color: #3D3027;
+  position: absolute;
+  top: 200px;
+  left: 450px;
+  display: none;
+}
+
+div.cancel_f{
+  /* border: 1px solid red; */
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+div.cancel_f > img{
+  cursor: pointer;
+}
+
+div.finish{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.ok{
+  margin-top: 25px;
+}
+
+div.ok > button{
+  border: 1px solid #3D3027;
+  background-color: #3D3027;
+  color: white;
+  padding: 5px 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  div.reserve_ok{
+    top: 200px;
+    left: 300px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  div.reserve_ok{
+    top: 200px;
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.reserve_ok{
+    width: 300px;
+    top: 200px;
+    left: 50px;
+    font-size: 0.8rem;
+  }
+
+  div.ok > button{
+  padding: 3px 10px;
+  }
+
+}
