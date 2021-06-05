@@ -339,21 +339,21 @@ div.select input{
 
 div.quantity{
   /* border: 1px solid blue; */
-  width: 10px;
+  width: 15px;
   display: inline-flex;
   margin-right: 2px;
   margin-left: 12px;
   cursor: pointer;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 div.quantity1{
   /* border: 1px solid blue; */
-  width: 10px;
+  width: 15px;
   display: inline-flex;
   margin-right: 15px;
   cursor: pointer;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -370,11 +370,11 @@ div.quantity1{
 
 @media screen and (max-width: 576px){
   div.quantity{
-    width: 16px;
+    width: 15px;
   }
   
   div.quantity1{
-    width: 16px;
+    width: 15px;
   }
 }
 
