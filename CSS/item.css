@@ -76,7 +76,7 @@ div.quantity_border{
 }
 
 div.quantity{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 15px;
   height: 15px;
   display: inline-flex;
@@ -86,7 +86,7 @@ div.quantity{
 }
 
 div.quantity1{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 15px;
   height: 15px;
   display: inline-flex;
@@ -95,17 +95,7 @@ div.quantity1{
   vertical-align: baseline;
 }
 
-@media screen and (max-width: 576px){
-  div.quantity{
-  width: 8px;
-  height: 8px;
-  }
-  
-  div.quantity1{
-    width: 8px;
-    height: 8px;
-  }
-}
+
 
 div.quantity img, div.quantity1 img{
   width: 100%;
