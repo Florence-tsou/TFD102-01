@@ -82,8 +82,8 @@ div.aboutus_pic{
 
 @media screen and (max-width: 576px){
   div.aboutus_pic{
-    max-width: 218px;
-    max-height: 218px;
+    width: 218px;
+    height: 218px;
     margin-left: 0;
   }
 }
