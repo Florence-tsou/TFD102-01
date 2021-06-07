@@ -68,22 +68,18 @@ div.aboutus_pic{
 
 @media screen and (min-width: 768px) and (max-width: 992px){
   div.aboutus_pic{
-    max-width: 400px;
     margin-left: 0;
   }
 }
   
 @media screen and (min-width: 576px) and (max-width: 768px){
   div.aboutus_pic{
-    max-width: 300px;
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 576px){
   div.aboutus_pic{
-    width: 218px;
-    height: 218px;
     margin-left: 0;
   }
 }
@@ -97,7 +93,7 @@ div.aboutus_pic img{
 
 div.aboutus_talk{
   background-color: #3d3027;
-  min-height: 300px;
+  /* min-height: 300px; */
   max-width: 700px;
   padding-left: 350px;
   padding-right: 20px;
@@ -161,9 +157,6 @@ div.aboutus_talk p{
 @media screen and (max-width: 576px) {
   div.aboutus_talk{
     vertical-align: middle;
-    min-width: 180px;
-    max-height: 218px;
-    min-height: 200px;
     padding-left: 10px;
     padding-right: 10px;
     position: static;
