@@ -63,6 +63,7 @@ div.aboutus_pic{
     font-size: 0;
     margin-left: 150px;
     display: flex;
+    align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
