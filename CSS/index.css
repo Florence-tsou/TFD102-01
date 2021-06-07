@@ -400,6 +400,10 @@ div.ceremony_talk p{
   color: white;
 }
 
+div.ceremony_talk p:nth-child(5){
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px){
   div.ceremony_talk{
     padding-right: 20px;
@@ -426,6 +430,11 @@ div.ceremony_talk p{
     padding-top: 50px;
     font-size: 0.9rem;
   }
+
+  div.ceremony_talk p:nth-child(5){
+    margin-bottom: 0px;
+  }
+  
 }
 
 @media screen and (max-width: 576px){
@@ -445,6 +454,11 @@ div.ceremony_talk p{
     padding-top: 10px;
     font-size: 0.5rem;
   }
+
+  div.ceremony_talk p:nth-child(5){
+    margin-bottom: 0px;
+  }
+  
 }
 
 
