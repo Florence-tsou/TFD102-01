@@ -144,6 +144,10 @@ ul.caption_list{
   font-size: 1rem;
 }
 
+ul.caption_list > li{
+  background-color: #3D3027;
+}
+
 ul.caption_list > li:first-child{
   margin-right: 50px;
 }
