@@ -117,6 +117,9 @@ div.aboutus_talk p{
   font-size: 1rem;
 }
 
+div.aboutus_talk p:nth-child(4){
+  margin-bottom: 50px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
   div.aboutus_talk{
@@ -152,6 +155,10 @@ div.aboutus_talk p{
     width: 100%;
     z-index: 0;
   }
+
+  div.aboutus_talk p:nth-child(4){
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -174,6 +181,10 @@ div.aboutus_talk p{
   div.aboutus_pic img{
     width: 100%;
     z-index: 0;
+  }
+
+  div.aboutus_talk p:nth-child(4){
+    margin-bottom: 0px;
   }
 }
 
@@ -364,7 +375,7 @@ div.ceremony_pic img{
   }
   
   div.ceremony_pic{
-    /* min-width: 160px; */
+    min-width: 250px;
     position: static;  }
 }
 
@@ -392,7 +403,6 @@ div.ceremony_talk p{
 
 @media screen and (min-width: 768px) and (max-width: 992px){
   div.ceremony_talk{
-    min-height: 300px;
     padding-right: 20px;
     padding-left: 20px;
     margin-left: 0px;
@@ -424,14 +434,11 @@ div.ceremony_talk p{
     padding-right: 10px;
     padding-left: 10px;
     margin-left: 0px;
-    min-width: 180px;
-    min-height: 200px;
     font-size: 0.5rem;
   }
 
   div.ceremony_talk p{
     font-size: 0.5rem;
-    overflow-y: auto;
   }
   
   div.ceremony_talk h3{
