@@ -374,7 +374,7 @@ div.ceremony_pic img{
   }
   
   div.ceremony_pic{
-    max-width: 300px;
+    max-width: 250px;
     position: static;  }
 }
 
@@ -434,7 +434,7 @@ div.ceremony_talk p{
     padding-left: 10px;
     margin-left: 0px;
     font-size: 0.5rem;
-    max-width: 200px;
+    max-width: 300px;
   }
 
   div.ceremony_talk p{
