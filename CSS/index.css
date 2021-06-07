@@ -233,10 +233,9 @@ ul.pushitem_last li{
   background-color: #3D3027;
 }
 
-ul.pushitem_last li:first-child{
+.-on{
   border-bottom: 2px solid white;
   font-weight: 700;
-  background-color: #3D3027;
 }
 
 ul.pushitem_last a{
@@ -312,6 +311,10 @@ ul.pushitem_pic li > a:hover{
     margin-bottom: 20px;
     font-size: 0.8rem;
   }
+}
+
+ul.pushitem_pic.shower, ul.pushitem_pic.body, ul.pushitem_pic.nioi{
+  display: none;
 }
 
 
