@@ -25,7 +25,7 @@ div.single_img > img{
 }
 
 div.aboutus{
-  /* border: 1px solid purple; */
+  border: 1px solid purple;
   display: flex;
   margin-top: 100px;
   margin-bottom: 200px;
@@ -42,8 +42,17 @@ div.aboutus{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 576px) and (max-width: 768px){
   div.aboutus{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 576px){
+  div.aboutus{
+    min-height: 200px;
     margin-bottom: 50px;
     position: static;
   }
