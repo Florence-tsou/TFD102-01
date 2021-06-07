@@ -347,7 +347,7 @@ div.ceremony_pic img{
   }
   
   div.ceremony_pic{
-    min-width: 400px;
+    /* min-width: 400px; */
     position: static;
   }
 }
@@ -359,7 +359,7 @@ div.ceremony_pic img{
   }
   
   div.ceremony_pic{
-    min-width: 300px;
+    /* min-width: 300px; */
     position: static;
   }
 }
@@ -371,7 +371,7 @@ div.ceremony_pic img{
   }
   
   div.ceremony_pic{
-    min-width: 160px;
+    /* min-width: 160px; */
     position: static;  }
 }
 
