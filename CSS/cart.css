@@ -145,9 +145,8 @@ div.triangle{
 
 div.cart{
   border: 1px solid #3d3027;
-  /* box-sizing: content-box; */
   max-width: 1000px;
-  height: 200px;
+  /* height: 200px; */
   margin: 0 auto;
   font-size: 0;
   margin-bottom: 60px;
@@ -410,7 +409,7 @@ div.img{
 }
 
 div.no{
-  height: calc(100% - 35px - 35px - 30px);
+  min-height: 150px;
 }
 
 div.total{
@@ -475,4 +474,9 @@ div.next_step a{
   div.next_step a{
     margin-right: 30px;
   }
+}
+
+.-on{
+  opacity: 0;
+  transition: 1s;
 }
