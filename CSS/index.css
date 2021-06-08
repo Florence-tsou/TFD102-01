@@ -567,7 +567,7 @@ div.ceremony_step1 span, div.ceremony_step2 span, div.ceremony_step3 span{
 @media screen and (max-width: 576px){
   div.ceremony_step1, div.ceremony_step2, div.ceremony_step3{
     max-width: 200px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
   div.ceremony_step1 h2, div.ceremony_step2 h2, div.ceremony_step3 h2{
