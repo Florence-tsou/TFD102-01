@@ -103,7 +103,7 @@ div.cart_list div {
   margin-bottom: 15px;
 }
 
-#garbage{
+img.garbage{
   cursor: pointer;
 }
 
@@ -172,3 +172,7 @@ div.hamburger{
 
 }
 
+.zz{
+  opacity: 0;
+  transition: 1s;
+}
