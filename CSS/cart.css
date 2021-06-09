@@ -339,8 +339,8 @@ div.select input{
 
 div.quantity{
   /* border: 1px solid blue; */
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   display: inline-flex;
   margin-right: 2px;
   margin-left: 12px;
@@ -350,8 +350,8 @@ div.quantity{
 
 div.quantity1{
   /* border: 1px solid blue; */
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   display: inline-flex;
   margin-right: 15px;
   cursor: pointer;

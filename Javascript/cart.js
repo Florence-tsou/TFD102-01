@@ -9,6 +9,7 @@ let price = document.getElementById("price");
 
 add.addEventListener("click", function(){
   abc.value++;
+  // 總金額計算
   for(let i = 0; i < total.length; i++){
     let nn = parseInt(abc.value);
     let pp = parseInt(price.innerText);
@@ -21,6 +22,7 @@ minus.addEventListener("click", function(){
     abc.value = 1;
   }else{
     abc.value--;
+    // 總金額計算
     for(let i = 0; i < total.length; i++){
       let nn = parseInt(abc.value);
       let pp = parseInt(price.innerText);
@@ -36,14 +38,20 @@ var garbage = document.getElementsByClassName("img");
 for(let i = 0; i < garbage.length; i++){
   garbage[i].addEventListener("click", function(e){
     let d_item = e.target.closest("div.item");
-    console.log(d_item);
+    // console.log(d_item);
     let q_del = confirm("確定刪除？");
     if(q_del){
       d_item.classList.add("-on");
       setTimeout(function(){
         d_item.remove();
       }, 1000);
-
     }
+
+    // 總金額變動
+    let cart = document.getElementById("cart");
+    let total = document.getElementById("total_money");
+    if(!cart.classList.contains("item")){
+      total.innerText = "0";
+    };
   });
 }
