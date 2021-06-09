@@ -91,7 +91,7 @@
         <p>價格</p>
         <p>數量</p>
         <p>金額</p>
-        <p>刪除</p>
+        <!-- <p>刪除</p> -->
       </div>
 
       <div class="item">
@@ -99,7 +99,7 @@
         <p>2,080</p>
         <p>2</p>
         <p>4,160</p>
-        <div class="img"><img src="./images/garbage.png"></div>
+        <!-- <div class="img"><img src="./images/garbage.png"></div> -->
       </div>
 
 
@@ -150,20 +150,20 @@
           </div>
 
           <div class="recipient_contact">
-            <p>*姓名</p>
-            <input type="text" name="name">
+            <p><span>*</span>姓名</p>
+            <input type="text" name="name" class="write">
           </div>
           <br>
 
           <div class="recipient_contact">
-            <p>*手機號碼</p>
-            <input type="text" name="tel">
+            <p><span>*</span>手機號碼</p>
+            <input type="text" name="tel" class="write">
           </div>
           <br>
 
           <div class="recipient_contact">
-            <p>*收件地址</p>
-            <input type="text" name="address">
+            <p><span>*</span>收件地址</p>
+            <input type="text" name="address" class="write">
           </div>
           <br>
 
@@ -195,37 +195,25 @@
               雲端載具
             </label>
           </div>
-          <br>
 
-          <!-- <div class="recipient_contact b">
-            <p>需要統一編號</p>
-            <label>
-              <input type="radio" name="uniform_numbers" checked>
-              是
-            </label>
-            <label>
-              <input type="radio" name="uniform_numbers">
-              否
-            </label>
-          </div>
-          <br> -->
+          </br>
 
           <div class="recipient_contact c">
-            <p>*統一編號</p>
-            <input type="text" name="uniform_numbers">
+            <p><span>*</span>統一編號</p>
+            <input type="text" name="uniform_numbers" class="write1">
           </div>
           <br>
 
           <div class="recipient_contact c">
-            <p>*公司抬頭</p>
-            <input type="text" name="uniform_name">
+            <p><span>*</span>公司抬頭</p>
+            <input type="text" name="uniform_name" class="write1">
           </div>
         </div>
       </div>
 
       <div class="next_step">
         <a href="./cart.html">上一步</a>
-        <a href="./cart_2.html">確定送出</a>
+        <a href="./cart_2.html" id="send">確定送出</a>
       </div>
 
 

@@ -63,7 +63,7 @@ li.A{
 
 @media screen and (max-width: 768px){
   li.A{
-    padding: 30px 0 30px 30px;
+    padding: 30px;
   }
   
 }

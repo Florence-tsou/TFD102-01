@@ -169,36 +169,36 @@ div.title{
 }
 
 div.title p:nth-child(1){
-  width: 500px;
+  width: 525px;
   text-align: center;
   background-color: #3d3027;
   font-weight: 700;
 }
 
 div.title p:nth-child(2){
-  width: 100px;
+  width: 125px;
   background-color: #3d3027;
   text-align: center;
 }
 
 div.title p:nth-child(3){
-  width: 100px;
+  width: 125px;
   background-color: #3d3027;
   text-align: center;
 }
 
 div.title p:nth-child(4){
-  width: 100px;
+  width: 125px;
   background-color: #3d3027;
   text-align: center;
 }
 
-div.title p:nth-child(5){
+/* div.title p:nth-child(5){
   width: 100px;
   background-color: #3d3027;
   text-align: center;
   margin-left: 100px;
-}
+} */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   div.title p:nth-child(1){
@@ -217,10 +217,10 @@ div.title p:nth-child(5){
     width: 150px;
   }
 
-  div.title p:nth-child(5){
+  /* div.title p:nth-child(5){
     min-width: 20px;
     margin-left: 50px;
-  }
+  } */
 
 
 }
@@ -265,32 +265,32 @@ div.item{
 }
 
 div.item p:nth-child(1){
-  width: 500px;
+  width: 525px;
   text-align: center;
 }
 
 div.item p:nth-child(2){
-  width: 100px;
+  width: 125px;
   text-align: center;
 }
 
 div.item p:nth-child(3){
-  width: 100px;
+  width: 125px;
   text-align: center;
 }
 
 div.item p:nth-child(4){
-  width: 100px;
+  width: 125px;
   text-align: center;
 }
 
-div.img{
+/* div.img{
   width: 100px;
   text-align: center;
   margin-left: 100px;
   vertical-align: middle;
   padding-top: 2px;
-}
+} */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   div.item p:nth-child(1){
@@ -333,18 +333,18 @@ div.img{
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+/* @media screen and (min-width: 576px) and (max-width: 768px) {
   div.img{
     min-width: 20px;
     margin-left: 50px;
   }
-}
-
+} */
+/* 
 @media screen and (max-width: 576px) {
   div.img{
     margin-left: 10px;
   }
-}
+} */
 
 
 
@@ -434,6 +434,10 @@ div.recipient_contact{
   /* border: 1px solid red; */
   display: flex;
   margin-left: 22px;
+}
+
+div.recipient_contact span{
+  color: red;
 }
 
 div.recipient_contact.c{
