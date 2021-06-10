@@ -189,6 +189,7 @@ div.title p:nth-child(3){
 
 div.title p:nth-child(4){
   width: 125px;
+  margin-right: 10px;
   background-color: #3d3027;
   text-align: center;
 }
@@ -281,6 +282,7 @@ div.item p:nth-child(3){
 
 div.item p:nth-child(4){
   width: 125px;
+  margin-right: 10px;
   text-align: center;
 }
 
