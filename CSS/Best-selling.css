@@ -165,16 +165,20 @@ div.best_list img{
 }
 
 @media screen and (max-width: 576px){
+  div.title{
+    padding: 0 10px;
+  }
+
   div.best_word1, div.best_word2, div.best_word3, div.best_word4, div.best_word5{
-    min-width: 200px;
-    max-width: 0;
+    max-width: 50%;
     font-size: 0.7rem;
     margin-bottom: 80px;
+    padding: 0 10px;
   }  
   
   div.best_pic1, div.best_pic2, div.best_pic3, div.best_pic4, div.best_pic5{
-    min-width: 200px;
-    max-width: 0;
+    max-width: 50%;
     margin-bottom: 80px;
+    /* padding: 0 5px; */
   }
 }
